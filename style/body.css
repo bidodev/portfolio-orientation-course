@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  padding: 0px 15em;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 19vw auto;
+}
+
+.main {
+  grid-column-start: 2;
+  margin-left: 15px;
+}
+
+/*h2 headings /skills/projects/etc */
+.paragraph-name:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30em;
+  background: brown;
+  opacity: 0.4;
+}
+
+/*Define here only properties which will afect all the content.*/
+body {
+  font-family: 'Segoe UI', Georgia, Times, 'Times New Roman', serif;
+
+  background: #d3cce3; /* fallback for old browsers */
+  background: linear-gradient(
+    to top,
+    #f7ffe0,
+    #f2efc7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
