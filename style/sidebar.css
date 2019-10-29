@@ -89,6 +89,7 @@
   .sidenav a:hover {
     color: white;
     background-color: #7a2c2c;
+    border-radius: 2px;
   }
 
   .sidenav a:after {
