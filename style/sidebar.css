@@ -12,10 +12,7 @@
   
     text-align: center;
     padding: 2em;
-    /*
-    max-height: calc(100vh - 5rem);
-    overflow-y: auto;
-    */
+    max-height: calc(100vh - 2rem);
     border-radius: 6px;
   
   }

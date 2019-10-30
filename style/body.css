@@ -6,7 +6,19 @@ html {
   box-sizing: border-box;
 }
 
-/* Sidebar Effects */
+/* Body Style */
+/*Define here only properties which will afect all the content.*/
+body {
+  font-family: 'Segoe UI', 'Roboto', Georgia, Times, 'Times New Roman', serif;
+  background: #d3cce3;
+  /* fallback for old browsers */
+  background: linear-gradient(to top,
+      #f7ffe0,
+      #f2efc7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Scrollbar Styling */
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -26,12 +38,12 @@ body::-webkit-scrollbar-thumb {
 
 .wrapper {
   display: grid;
-  padding: 0px 15em;
+  padding: 0px 12em;
 }
 
 .page {
   display: grid;
-  grid-template-columns: 16vw auto;
+  grid-template-columns: 15.5vw auto;
 }
 
 .main {
@@ -49,18 +61,7 @@ body::-webkit-scrollbar-thumb {
   opacity: 0.4;
 }
 
-/*Define here only properties which will afect all the content.*/
-body {
-  font-family: 'Segoe UI', 'Roboto', 'Montserrat',  Georgia, Times, 'Times New Roman', serif;
 
-  background: #d3cce3;
-  /* fallback for old browsers */
-  background: linear-gradient(to top,
-      #f7ffe0,
-      #f2efc7);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-margin: 0;
-}
 
 #myBtn {
   display: none;
