@@ -3,6 +3,7 @@
     position: relative;
     width: 100%;
     margin-left: -15px;
+    
   }
   
   .container-imagem-top .content {
@@ -12,6 +13,7 @@
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: #f1f1f1; /* Grey text */
     width: 100%; /* Full width */
-    padding: 15px; /* Some padding */
+    padding: 10px; /* Some padding */
     opacity: 0.9;
+    border-radius: 2px;
   }
