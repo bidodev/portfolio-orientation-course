@@ -3,8 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -13,45 +12,36 @@ html {
 }
 
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Segoe UI", "Roboto", Georgia, Times, "Times New Roman", serif;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f7ffe0), to(#f2efc7));
   background: linear-gradient(to top, #f7ffe0, #f2efc7);
+
   /* Scrollbar Styling */
-}
-
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.3);
-  border-radius: 1rem;
-  background-color: #f5f5f5;
-}
-
-body::-webkit-scrollbar {
-  width: 12px;
-  background-color: #f5f5f5;
-}
-
-body::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #f2efc7;
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    background-color: #f5f5f5;
+  }
+  &::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f5f5f5;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f2efc7;
+  }
 }
 
 /* start - main container */
 .container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3.2fr;
-      grid-template-columns: 1fr 3.2fr;
+  grid-template-columns: 1fr 3.2fr;
   grid-gap: 0.4em;
   padding: 0em 11em;
 }
 
 .sidebar {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f2efc7), to(#7a2c2c));
   background: linear-gradient(to top, #f2efc7, #7a2c2c);
   text-align: center;
   padding: 5rem;
@@ -59,7 +49,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sticky_wrapper {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -69,7 +58,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   border: 3px solid whitesmoke;
 }
-
 /* Sidebar.profile-name */
 .profile-name {
   font-size: 3rem;
@@ -106,10 +94,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* The navigation menu links */
+
 .sidenav {
   margin: 0;
 }
-
 .sidenav a {
   letter-spacing: 1px;
   padding: 0.3rem;
@@ -118,14 +106,19 @@ body::-webkit-scrollbar-thumb {
   display: block;
   font-weight: 700;
   text-shadow: none;
-  -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
+
 .sidenav a:hover {
   color: white;
-  background: linear-gradient(to right, var(--mainColor) 0%, var(--mainColor) 6px, transparent);
+  background: linear-gradient(
+    to right,
+    var(--mainColor) 0%,
+    var(--mainColor) 6px,
+    transparent
+  );
   border-radius: 2px;
 }
 
@@ -140,11 +133,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   list-style: none;
   padding: 0;
   width: 15rem;
@@ -186,15 +176,14 @@ body::-webkit-scrollbar-thumb {
 .notebook img {
   vertical-align: middle;
   border-radius: 6px 6px 0px 0px;
-  -webkit-box-shadow: 0px 0px 10px #ccc;
-          box-shadow: 0px 0px 10px #ccc;
+  box-shadow: 0px 0px 10px #ccc;
   width: 100%;
 }
 
 .notebook .content {
   position: absolute;
   bottom: 0;
-  background: black;
+  background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
   color: #ffeeee;
   width: 100%;
@@ -208,7 +197,6 @@ body::-webkit-scrollbar-thumb {
   padding: 20px 0 20px;
   position: relative;
 }
-
 .timeline:before {
   top: 0;
   bottom: 0;
@@ -219,18 +207,15 @@ body::-webkit-scrollbar-thumb {
   left: 50%;
   margin-left: -1.5px;
 }
-
 .timeline > li {
   margin-bottom: 20px;
   position: relative;
 }
-
 .timeline > li:before,
 .timeline > li:after {
   content: " ";
   display: table;
 }
-
 .timeline > li:after {
   clear: both;
 }
@@ -245,7 +230,6 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
-
 .timeline > li > .timeline-panel:before {
   position: absolute;
   top: 26px;
@@ -257,7 +241,6 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 15px solid transparent;
   content: " ";
 }
-
 .timeline > li > .timeline-panel:after {
   position: absolute;
   top: 27px;
@@ -269,7 +252,6 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 14px solid transparent;
   content: " ";
 }
-
 .timeline > li > .timeline-badge {
   color: #fff;
   width: 50px;
@@ -288,126 +270,96 @@ body::-webkit-scrollbar-thumb {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
 }
-
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
 }
-
 .timeline > li.timeline-inverted > .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
   right: auto;
 }
-
 .timeline > li.timeline-inverted > .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
   left: -14px;
   right: auto;
 }
-
 .timeline-badge.primary {
   background-color: #2e6da4 !important;
 }
-
 .timeline-badge.success {
   background-color: #565857 !important;
 }
-
 .timeline-badge.warning {
   background-color: #f0ad4e !important;
 }
-
 .timeline-badge.danger {
   background-color: #d9534f !important;
 }
-
 .timeline-badge.info {
   background-color: #5bc0de !important;
 }
-
 .timeline-title {
   margin-top: 0;
   color: inherit;
 }
-
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0;
 }
-
 .timeline-body > p + p {
   margin-top: 5px;
 }
 
 /* Container for skill bars */
 .container-skills {
-  width: auto;
-  /* Full width */
-  background-color: #ddd;
-  /* Grey background */
+  width: auto; /* Full width */
+  background-color: #ddd; /* Grey background */
 }
 
 .skills {
-  text-align: right;
-  /* Right-align text */
-  padding-top: 10px;
-  /* Add top padding */
-  padding-bottom: 10px;
-  /* Add bottom padding */
-  color: white;
-  /* White text color */
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
 }
 
 .html {
   width: 90%;
   background-color: #4caf50;
-}
-
-/* Green */
+} /* Green */
 .css {
   width: 80%;
   background-color: #2196f3;
-}
-
-/* Blue */
+} /* Blue */
 .js {
   width: 30%;
   background-color: #7a2c2c;
-}
-
-/* Red */
+} /* Red */
 .linux {
   width: 80%;
   background-color: #445019;
-}
+} /* Red */
 
-/* Red */
 /* Projects */
+
 /*Projects*/
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
-
 .grid > article {
   border: 1px solid #ccc;
-  -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
-
 .grid > article img {
   max-width: 100%;
 }
-
 .text {
   padding: 0 20px 20px;
 }
-
 .text > button {
   background: #7a2c2c;
   border: 0;
@@ -423,7 +375,6 @@ body::-webkit-scrollbar-thumb {
   padding: 10px;
   width: 100%;
 }
-
 .grid > article:nth-child(1) {
   grid-column: span 2;
 }
@@ -439,8 +390,7 @@ textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   resize: vertical;
 }
 
@@ -507,4 +457,3 @@ input[type="submit"] {
 #myBtn:hover {
   background-color: #555;
 }
-/*# sourceMappingURL=style.css.map */

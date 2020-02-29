@@ -1,187 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Welcome to my World - Bido.dev</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- We gotta to import fontawesome -->
-    <script src="https://kit.fontawesome.com/c37eed92f1.js" crossorigin="anonymous"></script>
+    <!-- We have to import fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/c37eed92f1.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- We gotta to import Montserrat from Google -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-</head>
-
-<body>
+    <!-- We have to import Montserrat from Google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Home</button>
+
     <div class="container">
-
-        <!-- Sidebar #start -->
-        <div class="sidebar">
-            <div class="sticky_wrapper">
-                <div class="profile sibebar">
-                    <img class="profile-image" src="imgs/avatar.jpg" alt="" width="80%" />
-                    <ul class="social-list">
-                        <li class="social-item">
-                            <a arial-label="linkedin" class="social-link" href="#">
-                                <i class="fab fa-linkedin fa-2x"></i>
-                            </a>
-                        </li>
-                        <li class="social-item">
-                            <a arial-label="facebook" class="social-link" href="#">
-                                <i class="fab fa-facebook fa-2x"></i>
-                            </a>
-                        </li>
-                        <li class="social-item">
-                            <a arial-label="twitter" class="social-link" href="https://github.com/Bidoc"
-                                target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="profile-main">
-                    <h2 class="profile-name">Bido.dev</h2>
-                    <div class="profile-cargo">Web Developer</div>
-                    <div class="profile-body">
-
-                        <div class="sidenav">
-                            <a onclick="topFunction()">About</a>
-                            <a href="#education">Education</a>
-                            <a href="#skills">Skills</a>
-                            <a href="#projects">Projects</a>
-                            <a href="#contact">Contact</a>
-                        </div>
-                        <br>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- Sidebar #end -->
-
-
-        <div class="main"><!-- #start main container -->
-
-            <div class="notebook">
-                <img src="imgs/notebook.jpg" alt="Notebook">
-                <div class="content">
-                    <h1>Hey! I am Claudinei...</h1>
-                </div>
-            </div>
-
-            <br />
-            <h2>About Me</h2>
-            <p>
-                I am a developer based in Berlin, Germany. I have studied Web
-                Development for one year with amazing professionals, and during this
-                period I developed several apps and Websites using CSS, JavaScript and
-                others technologies. Now I have taken the path of a web developer, to
-                bring ideas and the future to you.
-            </p>
-
-            <h2 id="education" class="paragraph-name">Education</h2>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via
-                                    Twitter</small></p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-               Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                                divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
-                                nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, perspiciatis?</p>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="timeline-title">Tecnician</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                                divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                                divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
-                            </p>
-                        </div>
-                    </div>
-                </li>
+      <!-- Sidebar #start -->
+      <div class="sidebar">
+        <div class="sticky_wrapper">
+          <div class="profile sibebar">
+            <img
+              class="profile-image"
+              src="imgs/avatar.jpg"
+              alt=""
+              width="80%"
+            />
+            <ul class="social-list">
+              <li class="social-item">
+                <a arial-label="linkedin" class="social-link" href="#">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+              </li>
+              <li class="social-item">
+                <a arial-label="facebook" class="social-link" href="#">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  arial-label="twitter"
+                  class="social-link"
+                  href="https://github.com/Bidoc"
+                  target="_blank"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+              </li>
             </ul>
+          </div>
 
-            <h2 id="skills" class="paragraph-name">Skills</h2>
-                  <p><b>HTML</b></p>
-                  <div class="container-skills">
-                    <div class="skills html">90%</div>
-                  </div>
-          
-                  <p><b>Linux / UNIX</b></p>
-                  <div class="container-skills">
-                    <div class="skills linux">80%</div>
-                  </div>
-          
-                  <p><b>CSS</b></p>
-                  <div class="container-skills">
-                    <div class="skills css">80%</div>
-                  </div>
-          
-                  <p><b>JavaScript</b></p>
-                  <div class="container-skills">
-                    <div class="skills js">30%</div>
-                  </div>
+          <div class="profile-main">
+            <h2 class="profile-name">Bido.dev</h2>
+            <div class="profile-cargo">Web Developer</div>
+            <div class="profile-body">
+              <div class="sidenav">
+                <a href="#main">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar #end -->
+
+      <div id="main" class="main">
+        <!-- #start main container -->
+
+        <div class="notebook">
+          <img src="imgs/notebook.jpg" alt="Notebook" />
+          <div class="content">
+            <h1>Hey! I am Claudinei...</h1>
+          </div>
+        </div>
+
+        <br />
+        <h2>About Me</h2>
+        <p>
+          I am a developer based in Berlin, Germany. I have studied Web
+          Development for one year with amazing professionals, and during this
+          period I developed several apps and Websites using CSS, JavaScript and
+          others technologies. Now I have taken the path of a web developer, to
+          bring ideas and the future to you.
+        </p>
+
+        <h2 id="education" class="paragraph-name">Education</h2>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge">
+              <i class="glyphicon glyphicon-check"></i>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                <p>
+                  <small class="text-muted"
+                    ><i class="glyphicon glyphicon-time"></i> 11 hours ago via
+                    Twitter</small
+                  >
+                </p>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  Mussum ipsum cacilds, vidis litro abertis. Consetis
+                  adipiscings elitis. Pra lá , depois Interessantiss quisso
+                  pudia ce receita de bolis, mais bolis eu num gostis.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge warning">
+              <i class="glyphicon glyphicon-credit-card"></i>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  Mussum ipsum cacilds, vidis litro abertis. Consetis
+                  adipiscings elitis. Pra lá , depois divoltis porris, paradis.
+                  Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
+                  nisi eros vermeio, in elementis mé pra quem é amistosis quis
+                  leo. Manduma pindureta
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge danger">
+              <i class="glyphicon glyphicon-credit-card"></i>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  perspiciatis?
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Tecnician</h4>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  Mussum ipsum cacilds, vidis litro abertis. Consetis
+                  adipiscings elitis. Pra lá , depois divoltis porris, paradis.
+                  Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge success">
+              <i class="glyphicon glyphicon-thumbs-up"></i>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  Mussum ipsum cacilds, vidis litro abertis. Consetis
+                  adipiscings elitis. Pra lá , depois divoltis porris, paradis.
+                  Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <h2 id="skills" class="paragraph-name">Skills</h2>
+        <p><b>HTML</b></p>
+        <div class="container-skills">
+          <div class="skills html">90%</div>
+        </div>
+
+        <p><b>Linux / UNIX</b></p>
+        <div class="container-skills">
+          <div class="skills linux">80%</div>
+        </div>
+
+        <p><b>CSS</b></p>
+        <div class="container-skills">
+          <div class="skills css">80%</div>
+        </div>
+
+        <p><b>JavaScript</b></p>
+        <div class="container-skills">
+          <div class="skills js">30%</div>
+        </div>
 
         <!-- Projects Container-->
         <h2 id="projects" class="paragraph-name">Projects</h2>
         <p style="text-align: justify;">
-          Other specialties of Claudinei are typewriter effect, sticky navigation,
-          on scroll content load, sticky sidebar, hover effects, portfolio and
-          even blog section. Of course, you will also find social media icons
-          and a fully functional contact form. Claudinei is a complete template
-          solution for building a one page personal website that will take you
-          to the next level. Here you can checkout some of my works! <br /><br />
+          Other specialties of Claudinei are typewriter effect, sticky
+          navigation, on scroll content load, sticky sidebar, hover effects,
+          portfolio and even blog section. Of course, you will also find social
+          media icons and a fully functional contact form. Claudinei is a
+          complete template solution for building a one page personal website
+          that will take you to the next level. Here you can checkout some of my
+          works! <br /><br />
         </p>
 
         <div class="grid">
@@ -190,8 +227,8 @@
             <div class="text">
               <h3>Seamlessly visualize quality</h3>
               <p>
-                Collaboratively administrate empowered markets via
-                plug-and-play networks.
+                Collaboratively administrate empowered markets via plug-and-play
+                networks.
               </p>
               <button>Here's why</button>
             </div>
@@ -243,55 +280,75 @@
         </div>
 
         <h2 id="contact" class="paragraph-name">Leave a Message</h2>
-                  <div class="container-form">
-                    <form action="">
-                      <div class="row">
-                        <div class="col-25"></div>
-                        <div class="col-75">
-                          <input type="text" id="fname" name="firstname" required placeholder="Your name.." />
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-25"></div>
-                        <div class="col-75">
-                          <input type="text" id="lname" name="lastname" required placeholder="Your last name.." />
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-25"></div>
-                        <div class="col-75">
-                          <input type="email" id="lname" name="lastname" required placeholder="Insert your email.." />
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-25"></div>
-                        <div class="col-75">
-                          <select id="country" name="country">
-                            <option value="br">Brazil</option>
-                            <option value="ca">Canada</option>
-                            <option value="de">Germany</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-25"></div>
-                        <div class="col-75">
-                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <input type="submit" value="Submit" />
-                      </div>
-                    </form>
-                  </div>
-
-        </div><!-- #end main container -->
-
+        <div class="container-form">
+          <form action="">
+            <div class="row">
+              <div class="col-25"></div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  required
+                  placeholder="Your name.."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25"></div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  required
+                  placeholder="Your last name.."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25"></div>
+              <div class="col-75">
+                <input
+                  type="email"
+                  id="lname"
+                  name="lastname"
+                  required
+                  placeholder="Insert your email.."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25"></div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="br">Brazil</option>
+                  <option value="ca">Canada</option>
+                  <option value="de">Germany</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25"></div>
+              <div class="col-75">
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Write something.."
+                  style="height:200px"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- #end main container -->
     </div>
 
-  <!-- Loading Javascript -->
-  <script src="js/script.js"></script>
-</body>
-
+    <!-- Loading Javascript -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
-
