@@ -42,12 +42,7 @@ body::-webkit-scrollbar-thumb {
 
 /* start - main container */
 .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3.2fr;
-      grid-template-columns: 1fr 3.2fr;
-  grid-gap: 0.4em;
-  padding: 0em 11em;
+  width: 90vh;
 }
 
 .sidebar {

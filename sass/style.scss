@@ -35,10 +35,7 @@ body {
 
 /* start - main container */
 .container {
-  display: grid;
-  grid-template-columns: 1fr 3.2fr;
-  grid-gap: 0.4em;
-  padding: 0em 11em;
+  width: 90vh;
 }
 
 .sidebar {
